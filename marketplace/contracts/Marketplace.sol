@@ -1,4 +1,5 @@
-pragma solidity ^0.8.0
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.28;
 
 contract Marketplace {
     string public name;
@@ -7,22 +8,34 @@ contract Marketplace {
 
     struct Contract {
         uint id;
-        string crop;
-        uint quantity; // quantity in units
-        string unit; // unit for quantity (tonnes, kilos, dozens, etc.)
-        uint price; // price per defined unit
         uint status;
         // 0 -> expired
         // 1 -> initiated, but not accepted yet
         // 2 -> ongoing
         // 3 -> completed
-        address owner; // the one who initiates the contract
-        string ownerName;
-        address promisee; // the one who accepts the contract
-        string promiseeName;
+        Crop crop;
+        Owner owner;
+        Promisee promisee;
         uint256 creationTime;
         string date;
         string insurance;
+    }
+
+    struct Owner {
+        address owner; // the one who initiates the contract
+        string name;
+    }
+
+    struct Promisee {
+        address promisee; // the one who accepts the contract
+        string name;
+    }
+
+    struct Crop {
+        string crop;
+        uint quantity; // quantity in units
+        string unit; // unit for quantity (tonnes, kilos, dozens, etc.)
+        uint price; // price per defined unit
     }
 
     event contractCreated (
@@ -40,6 +53,7 @@ contract Marketplace {
         string date,
         string insurance
     );
+
 
     constructor() public {
         name = "AgriNerds Marketplace";
