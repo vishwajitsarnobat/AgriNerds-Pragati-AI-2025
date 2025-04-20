@@ -8,7 +8,7 @@ contract('Marketplace', (accounts) => {
     before(async () => {
         marketplace = await Marketplace.deployed()
     })
-
+    
     describe('deployment', async () => {
         it('deployment', async () => {
             const address = await marketplace.address
