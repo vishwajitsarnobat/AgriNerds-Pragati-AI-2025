@@ -326,10 +326,12 @@ contract Marketplace {
         return commitmentsForRequest[_requestId];
     }
 
+    // returns all contracts linked to a farmer
     function getContractsForSeller(address _seller) external view returns (uint[] memory) {
         return contractsAsSeller[_seller];
     }
 
+    // returns all contracts linked to a company
     function getContractsForBuyer(address _buyer) external view returns (uint[] memory) {
         return contractsAsBuyer[_buyer];
     }
