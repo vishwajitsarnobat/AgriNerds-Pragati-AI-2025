@@ -1,17 +1,37 @@
+# Dependencies
 node_modules
 .env
+package-lock.json
 
 # Hardhat files
 /cache
 /artifacts
-
-# TypeChain files
 /typechain
 /typechain-types
-
-# solidity-coverage files
 /coverage
 /coverage.json
+/gas-report.txt
+/.openzeppelin
 
-# Hardhat Ignition default folder for deployments against a local node
+# Deployment files
+/deployments
+/deployed
+/build
+/dist
 ignition/deployments/chain-31337
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db

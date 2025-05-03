@@ -138,7 +138,6 @@ contract Marketplace {
     // Scenario 1: Company accepts a Farmer's Offer
     function acceptOffer(uint _offerId, string calldata _buyerName)
         external
-        onlyBuyer(_offerId) // Ensures only the intended buyer can accept
         inStatus(_offerId, ContractStatus.Pending)
     {
         require(contracts[_offerId].contractType == ContractType.Offer, "Not an Offer");
@@ -148,7 +147,6 @@ contract Marketplace {
         contractRef.buyer = msg.sender;
         contractRef.buyerName = _buyerName;
         contractRef.agreementTimestamp = block.timestamp;
-
 
         contractsAsBuyer[msg.sender].push(_offerId); // push the agreed contract in buyer's contract list
         emit ContractAgreed(_offerId, contractRef.seller, contractRef.buyer);

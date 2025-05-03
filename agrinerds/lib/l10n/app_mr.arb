@@ -1,0 +1,23 @@
+{
+  "@@locale": "mr",
+  "appTitle": "एग्रीनर्ड्स",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "home": "होम",
+  "@home": {
+    "description": "Home screen title"
+  },
+  "market": "मार्केट",
+  "@market": {
+    "description": "Market screen title"
+  },
+  "profile": "प्रोफाइल",
+  "@profile": {
+    "description": "Profile screen title"
+  },
+  "crops": "पिके",
+  "@crops": {
+    "description": "Crops section title"
+  }
+}
