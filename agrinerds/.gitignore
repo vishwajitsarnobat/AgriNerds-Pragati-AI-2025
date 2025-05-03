@@ -140,5 +140,5 @@ GoogleService-Info.plist
 *.gr.dart
 
 # My added dirs
-/android/
-/build/
+./android/app
+./build
