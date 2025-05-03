@@ -24,44 +24,30 @@ migrate_working_dir/
 
 # Flutter/Dart/Pub related
 **/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.packages
 .pub-cache/
 .pub/
-pubspec.lock
+/build/
 *.freezed.dart
 *.g.dart
 *.mocks.dart
 *.config.dart
 
-# Build directories
-/build/
-/build/*
+# Symbolication related
+app.*.symbols
 
-# Android related
-/android/*
-!/android/app/
-/android/app/*
-!/android/app/src/
-!/android/app/build.gradle
-!/android/build.gradle
-!/android/gradle/
-!/android/gradle.properties
-!/android/settings.gradle
-/android/.gradle/
-/android/captures/
-/android/local.properties
-/android/app/release/
-/android/app/debug/
-/android/app/profile/
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
 /android/key.properties
 /android/*.jks
-/android/gradle-wrapper.jar
-/android/gradlew
-/android/gradlew.bat
-/android/app/google-services.json
 
 # iOS build related
 **/ios/**/*.mode1v3
@@ -152,3 +138,7 @@ GoogleService-Info.plist
 *.inject.summary
 *.inject.dart
 *.gr.dart
+
+# My added dirs
+/android/
+/build/
