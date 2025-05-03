@@ -1,0 +1,23 @@
+{
+  "@@locale": "en",
+  "appTitle": "AgriNerds",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home screen title"
+  },
+  "market": "Market",
+  "@market": {
+    "description": "Market screen title"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile screen title"
+  },
+  "crops": "Crops",
+  "@crops": {
+    "description": "Crops section title"
+  }
+}
