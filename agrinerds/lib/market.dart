@@ -252,7 +252,7 @@ class _MarketPageState extends State<MarketPage> with SingleTickerProviderStateM
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Contract deleted successfully')),
-      );
+    );
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(

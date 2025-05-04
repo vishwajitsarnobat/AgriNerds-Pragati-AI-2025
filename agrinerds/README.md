@@ -1,6 +1,6 @@
-# agrinerds
+# agri_nerds
 
-Agrinerds app for farmers.
+A new Flutter project.
 
 ## Getting Started
 

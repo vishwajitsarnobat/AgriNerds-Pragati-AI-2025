@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
-import '../config/api_config.dart';
+import '../config/config.dart';
 
 class NewsItem {
   final String title;
@@ -34,7 +34,7 @@ class NewsItem {
 
 class NewsService {
   static const String _baseUrl = 'https://newsapi.org/v2';
-  static const String _apiKey = ApiConfig.newsApiKey;
+  static const String _apiKey = Config.apiKey;
 
   Future<List<NewsItem>> getAgricultureNews() async {
     try {

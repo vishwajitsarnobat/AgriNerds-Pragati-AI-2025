@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'l10n/app_localizations.dart';
 import 'market.dart';
 import 'crops.dart';
+import 'scheme_ai.dart';
 import 'widgets/custom_app_bar.dart';
 import 'widgets/weather_widget.dart';
 import 'widgets/advisory_widget.dart';
@@ -146,9 +147,9 @@ class _HomePageState extends State<HomePage> {
       case 1:
         return const MarketPage();
       case 2:
-        return const CropPage();
+        return const CropsPage();
       case 3:
-        return const Center(child: Text('Scheme AI Page Content'));
+        return const SchemeAIPage();
       default:
         return const Center(child: Text('Home Page Content'));
     }

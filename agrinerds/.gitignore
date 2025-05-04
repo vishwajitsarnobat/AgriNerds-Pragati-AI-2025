@@ -18,9 +18,10 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# VS Code related
-.vscode/
-*.code-workspace
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -31,10 +32,6 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-*.freezed.dart
-*.g.dart
-*.mocks.dart
-*.config.dart
 
 # Symbolication related
 app.*.symbols
@@ -46,99 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/android/key.properties
-/android/*.jks
-
-# iOS build related
-**/ios/**/*.mode1v3
-**/ios/**/*.mode2v3
-**/ios/**/*.moved-aside
-**/ios/**/*.pbxuser
-**/ios/**/*.perspectivev3
-**/ios/**/*sync/
-**/ios/**/.sconsign.dblite
-**/ios/**/.tags*
-**/ios/**/.vagrant/
-**/ios/**/DerivedData/
-**/ios/**/Icon?
-**/ios/**/Pods/
-**/ios/**/.symlinks/
-**/ios/**/profile
-**/ios/**/xcuserdata
-**/ios/.generated/
-**/ios/Flutter/.last_build_id
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.podspec
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/ephemeral
-**/ios/Flutter/app.flx
-**/ios/Flutter/app.zip
-**/ios/Flutter/flutter_assets/
-**/ios/Flutter/flutter_export_environment.sh
-**/ios/ServiceDefinitions.json
-**/ios/Runner/GeneratedPluginRegistrant.*
-
-# macOS
-**/macos/Flutter/Generated.xcconfig
-**/macos/Flutter/ephemeral
-**/macos/Flutter/Flutter.podspec
-**/macos/Flutter/FlutterMacOS.framework
-**/macos/Flutter/FlutterMacOS.framework.dSYM
-**/macos/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.*
-
-# Windows
-**/windows/flutter/generated_plugin_registrant.cc
-**/windows/flutter/generated_plugin_registrant.h
-**/windows/flutter/generated_plugins.cmake
-**/windows/flutter/flutter_windows.dll
-**/windows/flutter/flutter_windows.dll.lib
-**/windows/flutter/flutter_windows.dll.exp
-**/windows/flutter/flutter_windows.dll.pdb
-
-# Linux
-**/linux/flutter/generated_plugin_registrant.cc
-**/linux/flutter/generated_plugin_registrant.h
-**/linux/flutter/generated_plugins.cmake
-
-# Web
-**/web/favicon.png
-**/web/icons/
-**/web/manifest.json
-**/web/canvaskit/
-**/web/flutter_service_worker.js
-
-# Coverage
-coverage/
-*.lcov
-test/coverage/
-
-# Environment files
-.env
-.env.*
-!.env.example
-
-# Temporary files
-*.tmp
-*.temp
-*.bak
-*.backup
-
-# Firebase
-.firebase/
-firebase-debug.log
-firebase-debug.*.log
-google-services.json
-GoogleService-Info.plist
-
-# FVM (Flutter Version Management)
-.fvm/
-
-# Generated files
-*.inject.summary
-*.inject.dart
-*.gr.dart
-
-# My added dirs
-./android/app
-./build
