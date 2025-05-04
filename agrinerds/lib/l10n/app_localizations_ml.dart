@@ -22,4 +22,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get crops => 'വിളകൾ';
+
+  @override
+  String get schemeAI => 'സ്കീം AI';
 }

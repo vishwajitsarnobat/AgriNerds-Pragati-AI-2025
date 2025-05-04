@@ -19,5 +19,6 @@
   "crops": "పంటలు",
   "@crops": {
     "description": "Crops section title"
-  }
+  },
+  "schemeAI": "స్కీమ్ AI"
 }

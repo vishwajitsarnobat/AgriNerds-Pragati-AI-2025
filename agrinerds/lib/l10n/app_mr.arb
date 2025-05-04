@@ -19,5 +19,6 @@
   "crops": "पिके",
   "@crops": {
     "description": "Crops section title"
-  }
+  },
+  "schemeAI": "स्कीम AI"
 }

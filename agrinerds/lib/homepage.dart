@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'l10n/app_localizations.dart';
 import 'market.dart';
 import 'crops.dart';
-import 'profile.dart';
 import 'widgets/custom_app_bar.dart';
 import 'widgets/weather_widget.dart';
 import 'widgets/advisory_widget.dart';
@@ -55,7 +54,7 @@ class _HomePageState extends State<HomePage> {
       case 2:
         return l10n.crops;
       case 3:
-        return l10n.profile;
+        return l10n.schemeAI;
       default:
         return l10n.appTitle;
     }
@@ -88,8 +87,8 @@ class _HomePageState extends State<HomePage> {
             label: AppLocalizations.of(context)!.crops,
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.person),
-            label: AppLocalizations.of(context)!.profile,
+            icon: const Icon(Icons.auto_awesome),
+            label: AppLocalizations.of(context)!.schemeAI,
           ),
         ],
         currentIndex: _selectedIndex,
@@ -149,7 +148,7 @@ class _HomePageState extends State<HomePage> {
       case 2:
         return const CropPage();
       case 3:
-        return const ProfilePage();
+        return const Center(child: Text('Scheme AI Page Content'));
       default:
         return const Center(child: Text('Home Page Content'));
     }

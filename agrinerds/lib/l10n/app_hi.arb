@@ -12,12 +12,13 @@
   "@market": {
     "description": "Market screen title"
   },
-  "profile": "प्रोफाइल",
+  "profile": "प्रोफ़ाइल",
   "@profile": {
     "description": "Profile screen title"
   },
   "crops": "फसलें",
   "@crops": {
     "description": "Crops section title"
-  }
+  },
+  "schemeAI": "स्कीम AI"
 }

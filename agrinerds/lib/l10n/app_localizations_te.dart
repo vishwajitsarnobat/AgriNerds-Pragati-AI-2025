@@ -22,4 +22,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get crops => 'పంటలు';
+
+  @override
+  String get schemeAI => 'స్కీమ్ AI';
 }

@@ -22,4 +22,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get crops => 'பயிர்கள்';
+
+  @override
+  String get schemeAI => 'திட்டம் AI';
 }

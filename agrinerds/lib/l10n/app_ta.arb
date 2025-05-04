@@ -16,5 +16,6 @@
   "@profile": {
     "description": "Profile screen title"
   },
-  "crops": "பயிர்கள்"
+  "crops": "பயிர்கள்",
+  "schemeAI": "திட்டம் AI"
 }

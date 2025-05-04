@@ -135,6 +135,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Crops'**
   String get crops;
+
+  /// No description provided for @schemeAI.
+  ///
+  /// In en, this message translates to:
+  /// **'Scheme AI'**
+  String get schemeAI;
 }
 
 class _AppLocalizationsDelegate

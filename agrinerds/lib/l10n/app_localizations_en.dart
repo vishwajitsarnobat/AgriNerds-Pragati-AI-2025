@@ -22,4 +22,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get crops => 'Crops';
+
+  @override
+  String get schemeAI => 'Scheme AI';
 }

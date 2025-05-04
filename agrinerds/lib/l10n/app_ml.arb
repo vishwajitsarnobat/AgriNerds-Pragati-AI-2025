@@ -19,5 +19,6 @@
   "crops": "വിളകൾ",
   "@crops": {
     "description": "Crops section title"
-  }
+  },
+  "schemeAI": "സ്കീം AI"
 }

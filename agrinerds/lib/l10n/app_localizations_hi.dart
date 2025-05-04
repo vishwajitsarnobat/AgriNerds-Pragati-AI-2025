@@ -18,8 +18,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get market => 'मार्केट';
 
   @override
-  String get profile => 'प्रोफाइल';
+  String get profile => 'प्रोफ़ाइल';
 
   @override
   String get crops => 'फसलें';
+
+  @override
+  String get schemeAI => 'स्कीम AI';
 }
