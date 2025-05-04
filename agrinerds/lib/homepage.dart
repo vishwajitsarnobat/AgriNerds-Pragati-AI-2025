@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
       case 1:
         return l10n.market;
       case 2:
-        return l10n.market;
+        return l10n.crops;
       case 3:
         return l10n.profile;
       default:
