@@ -83,21 +83,47 @@ class _CropChatScreenState extends State<CropChatScreen> {
     });
 
     try {
-      final response = await widget.cropService.sendMessage(
+      final responseStream = widget.cropService.sendMessage(
         widget.crop.id,
         message,
         imageUrl: imageUrl,
       );
 
-      if (!mounted) return;
-
+      String fullResponse = '';
+      final responseId = DateTime.now().millisecondsSinceEpoch.toString();
+      
+      // Add empty response message to chat history
       setState(() {
-        widget.crop.chatHistory = [...widget.crop.chatHistory, response];
-        _isLoading = false;
+        widget.crop.chatHistory = [
+          ...widget.crop.chatHistory,
+          ChatMessage(
+            id: responseId,
+            content: '',
+            isUser: false,
+            timestamp: DateTime.now(),
+          ),
+        ];
       });
 
-      // Speak the response
-      await _speak(response.content);
+      await for (final chunk in responseStream) {
+        if (!mounted) return;
+        
+        setState(() {
+          fullResponse += chunk;
+          final index = widget.crop.chatHistory.indexWhere((m) => m.id == responseId);
+          if (index != -1) {
+            widget.crop.chatHistory[index] = ChatMessage(
+              id: responseId,
+              content: fullResponse,
+              isUser: false,
+              timestamp: DateTime.now(),
+            );
+          }
+        });
+      }
+
+      setState(() => _isLoading = false);
+      await _speak(fullResponse);
 
       // Scroll to bottom
       WidgetsBinding.instance.addPostFrameCallback((_) {

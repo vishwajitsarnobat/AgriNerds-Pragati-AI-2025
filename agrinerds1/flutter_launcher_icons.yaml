@@ -1,7 +1,0 @@
-# flutter pub run flutter_launcher_icons
-flutter_launcher_icons:
-  image_path: "assets/images/logo/agrinerds.jpg"
-
-  android: "launcher_icon"
-  image_path_android: "assets/images/logo/agrinerds.jpg"
-  min_sdk_android: 21 # android min sdk min:16, default 21
